@@ -66,6 +66,33 @@ app.get('/',(req,res)=>{
     res.send('Running genius server');
 })
 
+app.get('/hello',(req,res)=>{
+    res.send('hello from updated here hello')
+})
+
 app.listen(port,()=>{
     console.log('Running genius server on port',port);
 })
+
+
+/* one time 
+
+1. heroku account open
+2.heroku softwere install
+3. 
+every project
+1, git init 
+.git ignore
+. push everything
+. make sure you have this script: "start" "node index.js"
+. make sure: precess.env.Port in front or your port number
+. heroku login
+. heroku create (only one time for a project)
+. command git push heroku main
+
+--------
+update:
+.save everythig  and check locally
+. git add, git commit, git push
+. git push heroku main.
+*/
